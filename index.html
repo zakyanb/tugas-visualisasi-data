@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Visualisasi - Data Jantung</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+    <h1>Dashboard Analisis Penyakit Jantung</h1>
+
+    <div class="chart-container">
+        <div class="chart-box">
+            <h2>Distribusi Pasien</h2>
+            <canvas id="chart1"></canvas>
+            <p class="explanation">
+                Penjelasan: Grafik ini menunjukkan jumlah pasien yang didiagnosis memiliki penyakit jantung (1) dan yang tidak (0).
+            </p>
+        </div>
+        
+        <div class="chart-box">
+            <h2>Distribusi Umur Pasien</h2>
+            <canvas id="chart2"></canvas>
+            <p class="explanation">
+                Penjelasan: Grafik ini (Histogram) menunjukkan pengelompokan jumlah pasien berdasarkan rentang umur mereka.
+            </p>
+        </div>
+        
+        <div class="chart-box">
+            <h2>Hubungan Kolesterol vs. Tekanan Darah</h2>
+            <canvas id="chart3"></canvas>
+            <p class="explanation">
+                Penjelasan: Diagram sebar ini memetakan hubungan antara Kolesterol (sumbu y) dan Tekanan Darah (sumbu x).
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
